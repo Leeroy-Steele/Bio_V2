@@ -29,7 +29,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Leeroy Steele
       </Typography>
       <Divider />
       <List>
@@ -50,8 +50,8 @@ function DrawerAppBar(props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
 
-      <AppBar component="nav">
-        <Toolbar>
+      <AppBar component="nav" >
+        <Toolbar className='appBar'>
 
           <IconButton
             color="inherit"
@@ -66,11 +66,13 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1 }}
             align="left"
           >
-            MUI
+            Leeroy Steele
           </Typography>
+
+
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
