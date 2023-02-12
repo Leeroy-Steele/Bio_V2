@@ -9,50 +9,62 @@ import HobbyCard from './HobbyCard'
 
 // image imports
 import GamingImage from '../images/gamingPhoto.jpg'
+import FishingImage from '../images/fishingPhoto.jpg'
+import BandImage from '../images/bandPhoto.jpg'
+import TravelImage from '../images/travelPhoto.jpg'
 
 export default function Hobbies() {
-  return (
-    <Box sx={{ bgcolor: 'orange' }}>
-        
-    <Box m={6} sx={{maxWidth:900,m:"auto"}}>
 
-        <Typography variant="h3" gutterBottom sx={{fontWeight: 'bold', pt:2, font:'white'}}>
-            Hobbies
+    //Change card size here
+    const cardMaxWidth = 300
+    const cardHeight = 350
+
+  return (
+    <Box sx={{ bgcolor:"primary.background", minWidth:450 }} id="Hobbies">
+        
+      <Box m={6} sx={{maxWidth:900,m:"auto",minWidth:450, pt:5}}>
+
+        <Typography variant="h3" gutterBottom sx={{fontWeight: 'bold', pt:5, font:'white', textAlign:"center", color:"white"}}>
+            Personal Hobbies
         </Typography>
 
-        <Grid container spacing={3} mt={6} py={6} justifyContent="center">
+        <Grid container spacing={2} mt={0} py={6} justifyContent="center">
 
-            <Grid item xs={8} md={6} lg={3} xl={2}>
-              <HobbyCard 
-              imgURL={GamingImage} 
-              title="Gaming"
-              text="This is the text  This is the text This is the text This is the text This is the text"
-              />
-            </Grid>
+          <Grid item sx={{maxWidth:cardMaxWidth}}>
+            <HobbyCard 
+            imgURL={GamingImage} 
+            title="PC Gaming"
+            text="I have been playing PC games since I was very young. My earliest gaming memory was playing 'Alex the Kid' on Sega Mastersystem. My love of gaming has tought me a lot about how to build and configure PCs"
+            cardHeight={cardHeight}
+            />
+          </Grid>
 
-            <Grid item xs={8} md={6} lg={3} xl={2}>
-              <HobbyCard 
-              imgURL={GamingImage} 
-              title="Playing Music"
-              text="This is the text  This is the text This is the text This is the text This is the text"
-              />
-            </Grid>
+          <Grid item sx={{maxWidth:cardMaxWidth}}>
+            <HobbyCard 
+            imgURL={BandImage} 
+            title="Playing Music"
+            text="I spend a lot of time at home playing my electric guitar and bass. I have played in a few bands in Auckland / London and nothing beats the thrill of playing music live (If people actually show up to our gigs!)"
+            cardHeight={cardHeight}
+            />
+          </Grid>
 
-            <Grid item xs={8} md={6} lg={3} xl={2}>
-              <HobbyCard 
-              imgURL={GamingImage} 
-              title="Fishing"
-              text="This is the text  This is the text This is the text This is the text This is the text"
-              />
-            </Grid>
+          <Grid item sx={{maxWidth:cardMaxWidth}}>
+            <HobbyCard 
+            imgURL={FishingImage} 
+            title="Fishing"
+            text="I love going out fishing on my boat. usually my wife catches larger fish than me which she loves to remind people from time to time :)"
+            cardHeight={cardHeight}
+            />
+          </Grid>
 
-            <Grid item xs={8} md={6} lg={3} xl={2}>
-              <HobbyCard 
-              imgURL={GamingImage} 
-              title="Travel"
-              text="This is the text  This is the text This is the text This is the text This is the text"
-              />
-            </Grid>
+          <Grid item sx={{maxWidth:cardMaxWidth}}>
+            <HobbyCard 
+            imgURL={TravelImage} 
+            title="Travel"
+            text="I love to travel and see the world with my wife. We based ourselves in London between 2013 - 2022 and we travelled in this time to over 40 countries"
+            cardHeight={cardHeight}
+            />
+          </Grid>
 
         </Grid>
 

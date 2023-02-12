@@ -7,8 +7,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function HobbyCard(props) {
   return (
-    <Card >
-      <CardActionArea>
+    <Card sx={{height:props.cardHeight}}>
         <CardMedia
           component="img"
           height="140"
@@ -23,7 +22,6 @@ export default function HobbyCard(props) {
             {props.text}
           </Typography>
         </CardContent>
-      </CardActionArea>
     </Card>
   );
 }
