@@ -20,33 +20,38 @@ export default function HobbyCard(props) {
   }
 
   return (
-    <Card sx={{height:props.cardHeight}}>
+    <div>
 
-      <CardHeader
+      <Typography variant="h4" color="secondary.text" p={4} align="center" >
+        {props.title}
+      </Typography>
+
+    <Card>
+
+      {/* <CardHeader
 
         title={props.title}
-        sx={{textAlign:"center",bgcolor:"secondary.background", color:"primary.text",py:4}}
-      />
-
+        sx={{textAlign:"center",bgcolor:"primary.background", color:"primary.text",py:4}}
+      /> */}
+        <a href={props.websiteURL}>
         <CardMedia
           component="img"
-          height="240"
+          // height="240"
           image={props.imgURL}
           alt="Project image"
-        />
+          
+        /></a>
+
+        
         <CardContent sx={{p:0, border:0}}>
 
-          <Box sx={{ width:1, p:2, height:150 }}>
+          <Box sx={{ width:1, p:2 }}>
 
-            {/* <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center", pb:1, color:"white"}}>
-              {props.title}
-            </Typography> */}
-
-            <Stack spacing={0} direction="column">
+            <Stack spacing={0} direction={{ sm: 'column', md: 'row' }} justifyContent="center" >
 
             {(props.websiteURL)?
               <CardActions>
-                <Button variant="outlined" color="secondary" sx={{width:"60%", height:40, m:"auto"}} onClick={()=>{navigateToURL(props.websiteURL)}}>Website</Button>
+                <Button variant="outlined" color="secondary" sx={{width:250, height:40, m:"auto"}} onClick={()=>{navigateToURL(props.websiteURL)}}>Website</Button>
               </CardActions>
               :
               null
@@ -54,7 +59,7 @@ export default function HobbyCard(props) {
               
             {(props.gitHubURL)?
               <CardActions>
-                <Button variant="outlined" color="secondary" sx={{width:"60%", height:40, m:"auto"}} onClick={()=>{navigateToURL(props.gitHubURL)}}>Github (Front End)</Button>
+                <Button variant="outlined" color="secondary" sx={{width:250, height:40, m:"auto"}} onClick={()=>{navigateToURL(props.gitHubURL)}}>Github (Front End)</Button>
               </CardActions>
               :
               null
@@ -62,7 +67,7 @@ export default function HobbyCard(props) {
 
             {(props.gitHubBackendURL)?
               <CardActions>
-                <Button variant="outlined" color="secondary" sx={{width:"60%", height:40, m:"auto"}} onClick={()=>{navigateToURL(props.gitHubBackendURL)}}>Github (Backend)</Button>
+                <Button variant="outlined" color="secondary" sx={{width:250, height:40, m:"auto"}} onClick={()=>{navigateToURL(props.gitHubBackendURL)}}>Github (Backend)</Button>
               </CardActions>
               :
               null
@@ -73,49 +78,48 @@ export default function HobbyCard(props) {
           </Box>
 
 
-          <Box sx={{ width:1, p:2, height:300, borderRadius:1 }}>
+          <Box sx={{ width:1, p:2,  borderRadius:1, mt:5 }}>
 
-          {(props.text1)?
-            <Typography variant="body1" color="text.secondary" >
-              {props.text1}
-            </Typography>
-            :
-            null
-          }
+            {(props.text1)?
+              <Typography variant="body1" color="text.secondary" >
+                {props.text1}
+              </Typography>
+              :
+              null
+            }
 
-          <br></br>
+            <br></br>
 
-          {(props.text2)?
-            <Typography variant="body1" color="text.secondary" >
-              {props.text2}
-            </Typography>
-            :
-            null
-          }
-          
-          <br></br>
+            {(props.text2)?
+              <Typography variant="body1" color="text.secondary" >
+                {props.text2}
+              </Typography>
+              :
+              null
+            }
+            
+            <br></br>
 
-          {(props.text3)?
-            <Typography variant="body1" color="text.secondary" >
-              {props.text3}
-            </Typography>
-            :
-            null
-          }
+            {(props.text3)?
+              <Typography variant="body1" color="text.secondary" >
+                {props.text3}
+              </Typography>
+              :
+              null
+            }
 
           </Box>
 
-          <Box sx={{ bgcolor:'secondary.main', width:1, p:2, mt:1, height:500}}>
+          <Box sx={{ bgcolor:'secondary.main', width:1, p:2, mt:5}}>
 
-          <Grid sx={{textAlign:"center"}}>
+            <Grid sx={{textAlign:"center"}}>
 
-            <Typography variant="h6" color="white">
-              Project Tech Stack:
-            </Typography>
+              <Typography variant="h6" color="white">
+                Project Tech Stack:
+              </Typography>
 
-          </Grid>
+            </Grid>
 
- 
             <List dense={false}>
               
               {(props.techStack[0])?<ListItem><ListItemText sx={{color:"secondary.text",m:0}} primary={props.techStack[0]}/></ListItem>:null}
@@ -136,6 +140,7 @@ export default function HobbyCard(props) {
 
         </CardContent>
     </Card>
+    </div>
   );
 }
 

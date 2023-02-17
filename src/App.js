@@ -4,6 +4,7 @@ import Bio from './components/Bio'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
 import Hobbies from './components/Hobbies'
+import Footer from './components/Footer'
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -41,6 +42,7 @@ function App() {
         <Portfolio/>
         <Resume/>
         <Hobbies/>
+        <Footer/>
       </ThemeProvider>
     </div>
   );

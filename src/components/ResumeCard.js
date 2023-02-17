@@ -36,8 +36,13 @@ export default function ResumeCard(props) {
           <br></br>
 
           <Typography variant="body1" color="white" sx={{p:2}}>
-            {props.text}
+            {props.text1}
           </Typography>
+
+          <Typography variant="body1" color="white" sx={{p:2}}>
+            {props.text2}
+          </Typography>
+
           </Box>
         </CardContent>
     </Card>

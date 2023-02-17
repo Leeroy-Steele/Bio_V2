@@ -20,7 +20,7 @@ export default function Resume() {
 
   //Change card size here
   const cardMaxWidth = 400
-  const cardHeight = 600
+  const cardHeight = 647
 
   return (
     <Box sx={{ minWidth:450  }} id="Resume">
@@ -39,8 +39,8 @@ export default function Resume() {
             companyName="AUT / Institue Of Data"
             jobTitle="Assistant trainer for the software engineering bootcamp"
             dates="Feb 2023 onwards"
-            text="After completeing this software engineering course in early 2023 I was asked if I'd like to 
-            come back as assistant trainer to teach the next cohort"
+            text1="After completeing this software engineering bootcamp in early 2023 I accepted a position as assistant trainer starting from the next cohort"
+            text2="This is a part time position which I am currently employed"
             cardHeight={cardHeight}
             />
           </Grid>
@@ -51,8 +51,9 @@ export default function Resume() {
             companyName="Auckland Live"
             jobTitle="Audio Visual Technician"
             dates="July 2022 onwards"
-            text="I started working at Auckland Live in May 2022 when I moved back to New Zealand. My position is 'Event technician' 
-            and my responsibilities are; setting up & operating large scale Audio Visual systems for live events"
+            text1="I started working at Auckland Live in May 2022 when I moved back to New Zealand. My position is 'Event technician' 
+            and my responsibilities are setting up & operating large scale Audio Visual systems for live events"
+            text2="This is a part time position which I am currently employed"
             cardHeight={cardHeight}
             />
           </Grid>
@@ -63,10 +64,11 @@ export default function Resume() {
             companyName="JB Communications"
             jobTitle="Technical Production Engineer"
             dates="Dec 2013 - June 2022" 
-            text="I worked at JB Communications for the entire time I was living in London from 2014 to 2022. It was a diverse role that included
+            text1="I worked at JB Communications for the entire time I was living in London from 2014 to 2022. It was a diverse role that included
             working on live events and also building permanent AV installations. I was also responsible for aftercare and 
-            maintenance of the AV installations. This was a client facing role that was 50% office based for organisational
-            tasks and 50% onsite work leading the team"
+            maintenance of the AV installations. "
+            text2="This was a client facing role that was 50% office based for organisational
+            tasks and 50%  leading the team onsite"
             cardHeight={cardHeight}
             />
           </Grid>
@@ -77,9 +79,9 @@ export default function Resume() {
             companyName="Staging Connections"
             jobTitle="Event Technician"
             dates="Jan 2010 - Nov 2013"
-            text="My responsibilities included setting up large corporate event technology for conferences, awards shows, galadinners. Equipment 
-            such as PA systems, large format projection, lighting systems. I worked my way up to becoming a senior event technician in this role. 
-            I left this role to move to London"
+            text1="My responsibilities included setting up large corporate event technology for conferences, awards shows, galadinners. Equipment 
+            such as PA systems, large format projection, lighting systems. I worked my way up to becoming a senior event technician in this role"
+            text2="This was a full time position and I left this role to move to London"
             cardHeight={cardHeight}
             />
           </Grid>
@@ -90,8 +92,9 @@ export default function Resume() {
             companyName="Vidcom"
             jobTitle="AV technician"
             dates="May 2007 - Jan 2010"
-            text="This was my first job in the Corporate AV insustry ans I was hired as a AV Technician. My role included setting up and operating 
+            text1="This was my first job in the Corporate AV insustry ans I was hired as a AV Technician. My role included setting up and operating 
             various Audio Visual systems. Usually this was for conferences and usually limited to basic PA systems, Projectors and lighting"
+            text2="This was a full time position and I left this role to work on larger events at Staging Connections"
             cardHeight={cardHeight}
             />
           </Grid>
@@ -100,10 +103,10 @@ export default function Resume() {
             <ResumeCard
             imgURL={ArmyImage} 
             companyName="NZ Army"
-            jobTitle="Automotive technician"
+            jobTitle="Automotive Technician"
             dates="Jan 2005 - May 2006"
-            text="I made it through basic training, branch training and half way through my apprentiship 
-            but I left because I didn't love the trade"
+            text1="I joined the NZ Army as a Automotive Technician and I made it through basic training, branch training and half way through my apprentiship"
+            text2="I left this job because I realised I didn't love the trade"
             cardHeight={cardHeight}
             />
           </Grid>
