@@ -39,7 +39,7 @@ export default function Portfolio() {
               text2="The brief was to create a company website that showcases all of their products, show contact details, 
               testimonials, provide support email enquiries all while looking modern and responsive"
               text3=""
-              websiteURL="http://nelsonportablecoolrooms.life/"
+              websiteURL="http://nelsonportablecoolrooms.co.nz/"
               gitHubURL="https://github.com/Leeroy-Steele/Mini-Project2-Nelson-Portable-Coolrooms"
               techStack={[
                 "ReactJS",
