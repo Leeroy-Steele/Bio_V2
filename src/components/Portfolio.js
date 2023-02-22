@@ -11,6 +11,7 @@ import PortfolioCard from './PortfolioCard'
 import NPCImage from '../images/NPCImage.PNG'
 import LeebayImage from '../images/LeebayImage.PNG'
 import STAImage from '../images/alienGameScreenShot2.PNG'
+import RMCardsImage from '../images/rickAndMortyCardsWebSiteImage.PNG'
 
 export default function Portfolio() {
 
@@ -78,6 +79,20 @@ export default function Portfolio() {
               websiteURL="https://leeroy-steele.github.io/Squish-the-alien/"
               gitHubURL="https://github.com/Leeroy-Steele/Squish-the-alien"
               techStack={["Javascript","CSS","HTML"]}
+          
+            />
+          </Grid>
+          
+          <Grid item >
+            
+            <PortfolioCard
+              imgURL={RMCardsImage} 
+              title="Rick & Morty Character Cards"
+              text1="This was a personal front end project that I finished in jan 2022"
+              text2="The purpose is to showcase all the characters and Character stats in the Rick and morty TV Show while practising my Fetch / API Calls"
+              websiteURL="https://leeroy-steele.github.io/Mini-Project-1_Rick-Morty-/"
+              gitHubURL="https://github.com/Leeroy-Steele/Mini-Project-1_Rick-Morty-"
+              techStack={["Javascript","CSS","HTML", "APIs", "eCharts"]}
           
             />
           </Grid>
