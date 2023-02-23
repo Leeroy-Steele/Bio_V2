@@ -61,7 +61,7 @@ export default function Portfolio() {
               text1="This was a personal full stack project that I finished in jan 2023"
               text2="My mission was to create an EBay / Trade Me like platform where users can 
               create their own live auctions and others can bid and eventually purchase the items"
-              text3="This was my capstone project for the 2022 IOD coding bootcamp i completed"
+              text3="This was my capstone project for the IOD software engineering bootcamp I completed in 2023"
               websiteURL={null}
               gitHubURL="https://github.com/Leeroy-Steele/Leebay---Capstone-React-Front-End"
               gitHubBackendURL="https://github.com/Leeroy-Steele/Leebay-Capstone-Nodejs-Back-End-"
