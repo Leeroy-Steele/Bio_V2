@@ -62,9 +62,9 @@ export default function Portfolio() {
               text2="My mission was to create an EBay / Trade Me like platform where users can 
               create their own live auctions and others can bid and eventually purchase the items"
               text3="This was my capstone project for the IOD software engineering bootcamp I completed in 2023"
-              websiteURL={null}
-              gitHubURL="https://github.com/Leeroy-Steele/Leebay---Capstone-React-Front-End"
-              gitHubBackendURL="https://github.com/Leeroy-Steele/Leebay-Capstone-Nodejs-Back-End-"
+              websiteURL={"https://leebay.vercel.app/"}
+              gitHubURL="https://github.com/Leeroy-Steele/Leebay-Front-End"
+              gitHubBackendURL="https://github.com/Leeroy-Steele/Leebay-Back-End"
               techStack={["ReactJS","Material UI","Axios","Moment","NodeJS","MySQL Database","Multer","Swagger - documentation","Nodemon","Body-Parser"]}
             />
           </Grid>
