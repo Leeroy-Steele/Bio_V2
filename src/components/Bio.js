@@ -33,16 +33,15 @@ export default function Bio() {
                 </Typography>
 
                 <Typography variant="h4" gutterBottom>
-                    I'm Leeroy. Junior web developer & Audio Visual Engineer
+                    I'm Leeroy. I'm a Junior Web Developer
                 </Typography>
 
                 <Typography variant="body1" gutterBottom>
-                    I have been coding as a hobby since 2020 and I recently finished a software engineering course with AUT/ Institute of Data in 2023
+                    I have been coding as a hobby since 2020 and I completed a software engineering course with AUT/ Institute of Data in 2023
                 </Typography>
 
                 <Typography variant="body1" gutterBottom sx={{my:3}}>
-                    I am now working as an assistant trainer
-                    for Institute Of Data on their part time software engineering course
+                    I am currently working as Lead Product Support Specialist (including QA) for Lancom, NZ 
                 </Typography>
 
                 <Stack spacing={2} direction="row" m={4} sx={{ my:5 }}>
