@@ -5,4 +5,4 @@ This project was created using Create-React-App. To run this page in developer m
 2. Install dependancies with `npm i`
 3. Start the development server with `npm start`
 
-This website is live at https://bio-v2-7lg2ypmzo-leeroy-steele.vercel.app/
+This website is live at [https://bio-v2-7lg2ypmzo-leeroy-steele.vercel.app/](https://bio-v2.vercel.app/)
